@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pigs with Trotters</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/about.css">
+		
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-app="pwtApp">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a class="current">About</a></li>
+				<li><a href="meat.html">Meats</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="meat.html">PIGS WITH TROTTERS   ORDER NOW!</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="about" ng-controller="aboutController">
+		<article ng-repeat="product in about">
+			<span>
+				<h1 data-toggle="collapse">{{product.name}}</h1>
+				<p>{{product.description}}</p>
+				<!--<img ng-src="{{product.stock}}">-->
+			</span>
+		</article>
+	</section>
+		
+	<section>
+		<a href="meat.html"><img src="../images/PWTOverlay.png" class="overlay"></img></a>	
+	</section>
+	
+	<!--End of page content -->
+	<script src="../js/pwtApp.js"></script>
+	<script src="../js/controllers/aboutController.js"></script>
+</body>
+</html>

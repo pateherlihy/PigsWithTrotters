@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pigs with Trotters</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/contact.css">
+		
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-app="pwtApp">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a href="meat.html">Meats</a></li>
+				<li><a class="current">Contact us</a></li>
+				<li><a href="meat.html">PIGS WITH TROTTERS   ORDER NOW!</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<!-- Feedback Form Starts Here -->
+			<div id="feedback">
+			<!-- Heading Of The Form -->
+				<div class="head">
+					<h3>FeedBack Form</h3>
+					<p>Here at Pigs With Trotters we care about your thoughts, please drop us an email!</p>
+				</div>
+				<!-- Feedback Form -->
+				<form action="#" id="form" method="post" name="form">
+					<input name="vname" placeholder="Your Name" type="text" value="">
+					<input name="vemail" placeholder="Your Email" type="text" value="">
+					<input name="sub" placeholder="Subject" type="text" value="">
+					<label>Your Suggestion/Feedback</label>
+					<textarea name="msg" placeholder="Type your text here..."></textarea>
+					<input id="send" name="submit" type="submit" value="Send Feedback">
+				</form>
+				<h3><?php include "secure_email_code.php"?></h3>
+			</div>
+		<!-- Feedback Form Ends Here -->
+	</div>
+<section>
+		<section>
+		<a href="../html/meat.html"><img src="../images/PWTOverlay.png" class="overlay"></img></a>
+		</section>
+	</section>
+		
+	
+	<!--End of page content -->
+	<script src="../js/pwtApp.js"></script>
+	<script src="../js/controllers/contactController.js"></script>
+	<script src="../php/action_page.php"></script>
+</body>
+</html>
