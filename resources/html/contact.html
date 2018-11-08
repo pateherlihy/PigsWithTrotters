@@ -14,12 +14,12 @@
 </head>
 <body ng-app="pwtApp">
 	<header>
-		<nav>
+		<nav id="navbar">
 			<ul>
 				<li><a href="../../index.html">Home</a></li>
 				<li><a href="meat.html">Meats</a></li>
 				<li><a class="current">Contact us</a></li>
-				<li><a href="meat.html">PIGS WITH TROTTERS   ORDER NOW!</a></li>
+				<li style="float: right;"><a href="meat.html">Nigel Fredericks</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -50,11 +50,23 @@
 		<a href="../html/meat.html"><img src="../images/PWTOverlay.png" class="overlay"></img></a>
 		</section>
 	</section>
-		
+	
+
+<footer>
+		<section>
+			<div class="col-md-4">
+				<p>Supplier of fine meat, poultry and game to restaurants, event & contract caterers, the hospitality industry and high street businesses.</p>
+			</div>
+			<div class="col-md-2 col-md-offset-6">
+				<p class="email">EMAIL<i class="fa fa-envelope"></i><br>FOR NEW AND EXISTING ORDERS</p>
+			</div>
+		</section>
+	</footer>	
 	
 	<!--End of page content -->
 	<script src="../js/pwtApp.js"></script>
 	<script src="../js/controllers/contactController.js"></script>
 	<script src="../php/action_page.php"></script>
+<script src="../js/stickyNav.js"></script>
 </body>
 </html>
